@@ -299,3 +299,49 @@ formats may be used with input plugins supporting the `data_format` option:
 * [tcp](./plugins/outputs/socket_writer)
 * [udp](./plugins/outputs/socket_writer)
 * [wavefront](./plugins/outputs/wavefront)
+* [http_listener](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/http_listener)
+* [kafka_consumer](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kafka_consumer)
+* [mqtt_consumer](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer)
+* [nats_consumer](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/nats_consumer)
+* [nsq_consumer](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/nsq_consumer)
+* [logparser](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/logparser)
+* [statsd](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd)
+* [tail](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/tail)
+* [tcp_listener](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/tcp_listener)
+* [udp_listener](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/udp_listener)
+* [webhooks](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/webhooks)
+  * [filestack](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/webhooks/filestack)
+  * [github](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/webhooks/github)
+  * [mandrill](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/webhooks/mandrill)
+  * [rollbar](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/webhooks/rollbar)
+
+We'll be adding support for many more over the coming months. Read on if you
+want to add support for another service or third-party API.
+
+## Supported Output Plugins
+
+* [influxdb](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/influxdb)
+* [amon](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/amon)
+* [amqp](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/amqp)
+* [aws kinesis](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/kinesis)
+* [aws cloudwatch](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/cloudwatch)
+* [datadog](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/datadog)
+* [file](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/file)
+* [graphite](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/graphite)
+* [graylog](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/graylog)
+* [instrumental](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/instrumental)
+* [kafka](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/kafka)
+* [librato](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/librato)
+* [mqtt](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/mqtt)
+* [nats](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/nats)
+* [nsq](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/nsq)
+* [opentsdb](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/opentsdb)
+* [prometheus](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/prometheus_client)
+* [riemann](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/riemann)
+* [warp10](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/warp10)
+
+## Contributing
+
+Please see the
+[contributing guide](CONTRIBUTING.md)
+for details on contributing a plugin to Telegraf.
