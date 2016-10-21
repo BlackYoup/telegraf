@@ -92,6 +92,7 @@ docker-run:
 		-Cnetwork.host=0.0.0.0 \
 		-Ctransport.host=localhost \
 		-Clicense.enterprise=false
+	docker run --name warp10 -p "8090:8080" -p "8091:8081" -d -i warp10io/warp10:1.0.16-ci
 
 # Run docker containers necessary for integration tests; skipping services provided
 # by CircleCI
@@ -116,6 +117,7 @@ docker-run-circle:
 		-e SLAPD_CONFIG_ROOTPW="secret" \
 		-p "389:389" -p "636:636" \
 		-d cobaugh/openldap-alpine
+	docker run --name warp10 -p "8090:8080" -p "8091:8081" -d -i waxzce/warp10forci:latest
 
 docker-kill:
 	-docker kill aerospike elasticsearch kafka memcached mqtt mysql nats nsq \
